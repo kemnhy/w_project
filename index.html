@@ -7,9 +7,15 @@
     <!-- seo적용 -->
     <!-- seo 엔진 최적화 -->
     <!-- 웹페이지의 설명을 정의 -->
-    <meta name="description" content="자연은, 하늘보리, 아침햇살, 초록매실 등 브랜드 제품소개 및 회사소식 안내" />
+    <meta
+      name="description"
+      content="자연은, 하늘보리, 아침햇살, 초록매실 등 브랜드 제품소개 및 회사소식 안내"
+    />
     <!-- 웹페이지와 관련된 키워드를 정의 -->
-    <meta name="keywords" content="웅진식품, 자연은, 하늘보리, 아침햇살, 초록매실" />
+    <meta
+      name="keywords"
+      content="웅진식품, 자연은, 하늘보리, 아침햇살, 초록매실"
+    />
     <!-- 웹페이지의 저자를 정의  -->
     <meta name="author" content="WOONGJIN" />
     <!-- 소셜 미디어에서 페이지가 공유될때 사용되는 제목 -->
@@ -32,14 +38,26 @@
       content="https://w-project-jade.vercel.app/images/imgi_2_logo_mo.svg"
     />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
-    <meta property="og:description" content="자연은, 하늘보리, 아침햇살, 초록매실 등 브랜드 제품소개 및 회사소식 안내." />
+    <meta
+      property="og:description"
+      content="자연은, 하늘보리, 아침햇살, 초록매실 등 브랜드 제품소개 및 회사소식 안내."
+    />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="js/submenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- 전체레이아웃 -->
     <div class="wrap">
       <!-- 상단 -->
       <header class="header">
+        <div class="overlay" id="overlay"></div>
+        <div class="header_bg"></div>
         <!-- .header-box -->
         <div class="header-box container">
           <!-- 로고 -->
@@ -50,12 +68,72 @@
 
           <nav class="nav">
             <ul class="gnb">
-              <li><a href="#">브랜드</a></li>
-              <li><a href="#">커뮤니티</a></li>
-              <li><a href="#">기업소개</a></li>
-              <li><a href="#">인재채용</a></li>
+              <li>
+                <a href="#">
+                  <div class="menu">브랜드</div>
+                  <ul class="submenu">
+                    <li>주스</li>
+                    <li>차</li>
+                    <li>곡물</li>
+                    <li>어린이</li>
+                    <li>생수/탄산/이온</li>
+                    <li>홍삼/건강/드링크</li>
+                    <li>제과</li>
+                    <li>해외수입제품</li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="menu">커뮤니티</div>
+                  <ul class="submenu">
+                    <li>공지사항</li>
+                    <li>공시/공고</li>
+                    <li>고객문의</li>
+                  </ul></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="menu">기업소개</div>
+                  <ul class="submenu">
+                    <li>웅진식품</li>
+                    <li>연혁</li>
+                    <li>홍보센터</li>
+                    <li>대영식품</li>
+                  </ul></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="menu">인재채용</div>
+                  <ul class="submenu">
+                    <li>인재채용</li>
+                  </ul></a
+                >
+              </li>
             </ul>
           </nav>
+          <!-- 햄버거 메뉴 버튼 -->
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!--  모바일일때 사이드 메뉴 -->
+          <div class="mobile-menu" id="mobileMenu">
+            <ul>
+              <li><a href="#">주스</a></li>
+              <li><a href="#">차</a></li>
+              <li><a href="#">곡물</a></li>
+              <li><a href="#">어린이</a></li>
+              <li><a href="#">생수/탄산/이온</a></li>
+              <li><a href="#">홍삼/건강/드링크</a></li>
+              <li><a href="#">제과 </a></li>
+              <li><a href="#">해외수입제품 </a></li>
+            </ul>
+          </div>
+          <div class="overlay" id="overlay"></div>
           <!-- 언어 -->
           <div class="lang">
             <ul class="lang-list">
@@ -67,11 +145,46 @@
       </header>
       <!-- 비주얼 -->
       <section class="visual">
-        <div class="visual-inner">
-          <img
-            src="images/imgi_7_b1a0c0d0-9c27-4762-a488-03ff48fd5fc7.jpg"
-            alt=""
-          />
+        <!-- 비주얼 배너 스와퍼 -->
+        <div class="swiper visualSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/imgi_7_b1a0c0d0-9c27-4762-a488-03ff48fd5fc7.jpg"
+                alt="이미지1"
+                class="web-img"
+              />
+              <img
+                src="images/imgi_8_213254da-fe1d-41af-b73a-621913932136.jpg"
+                alt="모발일 이미지"
+                class="mo-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/imgi_9_9f7d94ab-e1a2-427c-bd64-2b99bbd30a21.jpg"
+                alt="이미지1"
+                class="web-img"
+              />
+              <img
+                src="images/imgi_10_60742e65-75af-4bf5-8902-0a2f6ddbb070.jpg"
+                alt="모발일 이미지"
+                class="mo-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/imgi_11_5827022b-d6e5-4b86-9088-3640b4443773.png"
+                alt="이미지1"
+                class="web-img"
+              />
+              <img
+                src="images/imgi_12_6d70a91f-59b9-4bf2-8098-333cff2d657a.png"
+                alt="모발일 이미지"
+                class="mo-img"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <!-- 비즈니스 -->
@@ -80,52 +193,60 @@
           <!-- 비즈니스 상단 -->
           <div class="business-top">
             <h2 class="business-title">웅진 브랜드</h2>
-            <p class="business-desc">
-              맛있고 건강한 웅진식품 대표 브랜드를 확인해보세요
-            </p>
-            <ul>
-              <li><a href="#">주스</a></li>
-              <li><a href="#">차</a></li>
-              <li><a href="#">곡물</a></li>
-              <li><a href="#">어린이</a></li>
-              <li><a href="#">생수/탄산/이온</a></li>
-              <li><a href="#">홍삼/건강/드링크</a></li>
-              <li><a href="#">제과</a></li>
-              <li><a href="#">해외수입제품</a></li>
-            </ul>
+            <p class="cc">맛있고 건강한 웅진식품 대표 브랜드를 확인해보세요</p>
+            <div class="business-list">
+              <a href="#">주스</a>
+              <a href="#">차</a>
+              <a href="#">곡물</a>
+              <a href="#">어린이</a>
+              <a href="#">생수/탄산/이온</a>
+              <a href="#">홍삼/건강/드링크</a>
+              <a href="#">제과</a>
+              <a href="#">해외수입제품</a>
+            </div>
           </div>
           <!-- 이미지 -->
           <div class="product-top container">
-            <a href="#">
-              <img
-                src="images/imgi_13_988f4c9d-4968-4fff-ac87-bee8bf0ca79d.png"
-                alt=""
-              />
-            </a>
-            <a href="#">
-              <img
-                src="images/imgi_14_dad9b103-f115-42a0-b0a5-cfd25561c3be.png"
-                alt=""
-              />
-            </a>
-            <a href="#">
-              <img
-                src="images/imgi_15_ab012b6f-ce24-4d5b-ac20-76541c911f0f.png"
-                alt=""
-              />
-            </a>
-            <a href="#">
-              <img
-                src="images/imgi_16_a3d59de4-4bcd-4a12-ac0d-1a5608544137.png"
-                alt=""
-              />
-            </a>
-            <a href="#">
-              <img
-                src="images/imgi_17_a5699127-9db4-4568-9d60-305e0f20009c.png"
-                alt=""
-              />
-            </a>
+            <div class="swiper itemSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/imgi_13_988f4c9d-4968-4fff-ac87-bee8bf0ca79d.png"
+                    alt="상품1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/imgi_14_dad9b103-f115-42a0-b0a5-cfd25561c3be.png"
+                    alt="상품1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/imgi_15_ab012b6f-ce24-4d5b-ac20-76541c911f0f.png"
+                    alt="상품1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/imgi_16_a3d59de4-4bcd-4a12-ac0d-1a5608544137.png"
+                    alt="상품1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/imgi_17_a5699127-9db4-4568-9d60-305e0f20009c.png"
+                    alt="상품1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/imgi_18_dabae1f3-d620-43af-80ce-a2c66443b930.png"
+                    alt="상품1"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
           <div class="product-bt container">
             <a href="#">
@@ -147,146 +268,135 @@
               />
             </a>
           </div>
-          <!-- 뉴스 -->
-          <section class="news">
-            <!-- 배경색 -->
-            <div class="news-bg">
-              <div class="news-inner">
-                <!-- 공지사항 -->
-                <h2 class="title">웅진커뮤니티</h2>
-                <div class="sub_line"></div>
-                <div class="sns-icon-box">
-                  <a
-                    href="https://www.instagram.com/woongjinfood/"
-                    target="_blank"
-                  >
-                    <img src="images/imgi_56_insta.png" alt="instagram" />
-                  </a>
-
-                  <a href="https://www.facebook.com/wjfood" target="_blank">
-                    <img src="images/imgi_57_facebook.png" alt="facebook" />
-                  </a>
-
-                  <a href="https://www.youtube.com/@wjfood" target="_blank">
-                    <img src="images/imgi_58_youtube.png" alt="youtube" />
-                  </a>
-
-                  <a href="https://blog.naver.com/wj_food" target="_blank">
-                    <img src="images/imgi_59_blog.png" alt="naver" />
-                  </a>
-                </div>
-                <ul class="community-wrap container">
-                  <li class="notice">
-                    <h3 class="commutitle">
-                      <p>공지사항</p>
-                      <a href="https://www.wjfood.co.kr/community/notice"> </a>
-                    </h3>
-                    <a
-                      href="https://www.wjfood.co.kr/community/noticeDetail?id=16"
-                      class="cont"
-                      >웅진식품에서 상장 루머 관련해서 알려드립니다.</a
-                    >
-                    <p class="contdate">2023-05-31</p>
-                  </li>
-                  <li class="announce">
-                    <h3 class="commutitle">
-                      <p>공시/공고</p>
-                      <a href="https://www.wjfood.co.kr/community/announce"></a>
-                    </h3>
-                    <a
-                      href="https://www.wjfood.co.kr/community/announce"
-                      class="cont"
-                      >웅진식품 제49기 결산공고</a
-                    >
-                    <p class="contdate">2025-03-31</p>
-                  </li>
-                  <li class="question">
-                    <p>공지사항</p>
-                    <a
-                      href="https://www.wjfood.co.kr/community/question"
-                      class="cont"
-                      >문의사항을 접수해주시면 신속히 상담해 드리겠습니다.</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- 하단 -->
-            <div class="footer" id="footer">
-              <div class="footer-inner container">
-                <div class="footer-con">
-                  <a href="#">개인정보처리방침</a>
-                  <span class="line"></span>
-                  <a href="#">법적고지</a>
-                  <span class="line"></span>
-                  <a href="#">이메일무단수집거부</a>
-                  <span class="line"></span>
-                  <a href="#">사이트맵</a>
-                  <span class="line"></span>
-                  <a href="#">고객문의</a>
-                </div>
-                <!-- 카피라이터 -->
-                <div class="footer-info">
-                  <div class="footer-left">
-                    <!-- 하단 로고 -->
-                    <a href="#" class="footer-1ogo">
-                      <img src="images/imgi_60_footer_logo.svg" alt="" />
-                    </a>
-                    <ul class="footer-list">
-                      <li>
-                        <p>
-                          본사주소 : 서울시 중구 퇴계로 100 스테이트타워남산 3층
-                        </p>
-                        <p>
-                          Copyright 2014 WOONGJIN FOODS CO., LTDAll Right
-                          Reserved.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="footer-middle">
-                    <h2>전화번호</h2>
-                    <div class="number">
-                      <p>
-                        대표번호 <br />
-                        <span>02-3668-9114</span>
-                      </p>
-
-                      <p>
-                        고객센터 <br />
-                        <span>080-766-6543</span>
-                      </p>
-                    </div>
-                  </div>
-                  <!-- 하단 sns -->
-                  <div class="sns-logo">
-                    <h2>sns 채널</h2>
-                    <a href="https://www.instagram.com/woongjinfood/"
-                      ><img src="images/imgi_61_f_insta.svg" alt="" />
-                    </a>
-                    <span>
-                      <a href="https://www.facebook.com/wjfood">
-                        <img src="images/imgi_62_f_face.svg" alt="" />
-                      </a>
-                    </span>
-                    <span>
-                      <a href="https://www.youtube.com/user/wjfood">
-                        <img src="images/imgi_63_f_youtube.svg" alt="" />
-                      </a>
-                    </span>
-                    <span>
-                      <a href="https://blog.naver.com/wj_food">
-                        <img src="images/imgi_64_f_blog.svg" alt="" />
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
       </section>
+      <!-- 뉴스 -->
+      <section class="news">
+        <!-- 배경색 -->
+        <div class="news-bg">
+          <div class="news-inner">
+            <!-- 공지사항 -->
+            <h2 class="title">웅진커뮤니티</h2>
+            <div class="sub_line"></div>
+            <div class="sns-icon-box">
+              <a href="https://www.instagram.com/woongjinfood/" target="_blank">
+                <img src="images/imgi_56_insta.png" alt="instagram" />
+              </a>
+
+              <a href="https://www.facebook.com/wjfood" target="_blank">
+                <img src="images/imgi_57_facebook.png" alt="facebook" />
+              </a>
+
+              <a href="https://www.youtube.com/@wjfood" target="_blank">
+                <img src="images/imgi_58_youtube.png" alt="youtube" />
+              </a>
+
+              <a href="https://blog.naver.com/wj_food" target="_blank">
+                <img src="images/imgi_59_blog.png" alt="naver" />
+              </a>
+            </div>
+            <ul class="community-wrap container">
+              <li class="notice">
+                <h3 class="commutitle">
+                  <p>공지사항</p>
+                  <a href="https://www.wjfood.co.kr/community/notice"> </a>
+                </h3>
+                <a
+                  href="https://www.wjfood.co.kr/community/noticeDetail?id=16"
+                  class="cont"
+                  >웅진식품에서 상장 루머 관련해서 알려드립니다.</a
+                >
+                <p class="contdate">2023-05-31</p>
+              </li>
+              <li class="announce">
+                <h3 class="commutitle">
+                  <p>공시/공고</p>
+                  <a href="https://www.wjfood.co.kr/community/announce"></a>
+                </h3>
+                <a
+                  href="https://www.wjfood.co.kr/community/announce"
+                  class="cont"
+                  >웅진식품 제49기 결산공고</a
+                >
+                <p class="contdate">2025-03-31</p>
+              </li>
+              <li class="question">
+                <p>공지사항</p>
+                <a
+                  href="https://www.wjfood.co.kr/community/question"
+                  class="cont"
+                  >문의사항을 접수해주시면 신속히 상담해 드리겠습니다.</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 하단 -->
+      <div class="footer" id="footer">
+        <div class="footer-inner container">
+          <div class="footer-con">
+            <a href="#">개인정보처리방침</a>
+            <span class="line"></span>
+            <a href="#">법적고지</a>
+            <span class="line"></span>
+            <a href="#">이메일무단수집거부</a>
+            <span class="line"></span>
+            <a href="#">사이트맵</a>
+            <span class="line"></span>
+            <a href="#">고객문의</a>
+          </div>
+          <!-- 카피라이터 -->
+          <div class="footer-info">
+            <div class="footer-left">
+              <!-- 하단 로고 -->
+              <a href="#" class="footer-1ogo">
+                <img src="images/imgi_60_footer_logo.svg" alt="" />
+              </a>
+              <div class="footer-list">
+                <p>본사주소 : 서울시 중구 퇴계로 100 스테이트타워남산 3층</p>
+                <p>Copyright 2014 WOONGJIN FOODS CO., LTDAll Right Reserved.</p>
+              </div>
+            </div>
+
+            <div class="footer-middle">
+              <h2>전화번호</h2>
+              <div class="number">
+                <p>
+                  대표번호 <br />
+                  <span>02-3668-9114</span>
+                </p>
+
+                <p>
+                  고객센터 <br />
+                  <span>080-766-6543</span>
+                </p>
+              </div>
+            </div>
+            <!-- 하단 sns -->
+            <div class="sns-logo">
+              <h2>sns 채널</h2>
+              <div class="sns-link">
+                <a href="https://www.instagram.com/woongjinfood/"
+                  ><img src="images/imgi_61_f_insta.svg" alt="" />
+                </a>
+
+                <a href="https://www.facebook.com/wjfood">
+                  <img src="images/imgi_62_f_face.svg" alt="" />
+                </a>
+
+                <a href="https://www.youtube.com/user/wjfood">
+                  <img src="images/imgi_63_f_youtube.svg" alt="" />
+                </a>
+
+                <a href="https://blog.naver.com/wj_food">
+                  <img src="images/imgi_64_f_blog.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
