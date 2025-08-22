@@ -175,7 +175,7 @@ a {
   /* width: 177px; */
   display: flex;
   gap: 10px;
-  background-color: bisque;
+  background-color: rgb(248, 248, 248);
 }
 .lang-list {
   display: flex;
@@ -498,13 +498,11 @@ a {
   .community-wrap li {
     width: 100%;
   }
-  .business-list a{
+  .business-list a {
     font-size: 10px;
   }
   .business p {
     font-size: 11px;
-    
-    
   }
   .business-title{
     font-size: 22px;
