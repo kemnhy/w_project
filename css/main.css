@@ -306,7 +306,7 @@ a {
 }
 .news-inner {
   /* margin-top: 60px; */
-  padding: 100px 25px;
+  padding: 0px 25px;
   background-color: #f8f9ee;
 }
 .sub_line {
@@ -352,7 +352,7 @@ a {
 }
 .community-wrap .notice {
   background-color: #ff8b46;
-  padding: 3%
+  padding: 3%;
 }
 .community-wrap .notice p {
   /* margin-top: 10px; */
@@ -507,7 +507,7 @@ a {
   .community-wrap li {
     width: 100%;
   }
-  
+
   .business p {
     padding: 0 15px;
     font-size: 12px;
@@ -521,7 +521,7 @@ a {
     text-align: center;
     margin-bottom: 15px;
   }
-  
+
   .mobile-menu li a {
     font-size: 12px;
   }
@@ -531,56 +531,62 @@ a {
   .news h2 {
     font-size: 18px;
   }
-  .community-wrap .notice p{
+  .community-wrap .notice p {
     font-size: 17px;
   }
-  .community-wrap .cont{
+  .community-wrap .cont {
     font-size: 12px;
   }
-  .community-wrap .question p{
+  .community-wrap .question p {
     font-size: 17px;
   }
-  .community-wrap .announce p{
+  .community-wrap .announce p {
     font-size: 17px;
   }
-.product-bt{
-  flex-direction: column;
-width: 70%;
-/* background-color: red; */
-
-}
-.product-bt a{
-  width: 100%;
-  display: block;
-}
-.product-bt a img{
-  width: 100%;
-  display: block;
-}
-.business{
-  padding-top: 30px;
-}
-.business-list a{
-margin: 0px;
-font-size: 14px;
-}
-.business-list {
-  width: 100%;
-}
-.business-top{
-  margin: 30px;
-}
-.footer-left {
-  width: 100%;
-}
-.footer-middle {
-  width: 100%;
-}
-.footer-middle span{
-  font-size: 14px;
-}
-.community-wrap li {
-  margin-bottom: 3%;
-}
+  
+  
+  .product-bt {
+    flex-direction: column;
+    width: 70%;
+    /* background-color: red; */
+  }
+  .product-bt a {
+    width: 100%;
+    display: block;
+  }
+  .product-bt a img {
+    width: 100%;
+    display: block;
+  }
+  .business {
+    padding-top: 30px;
+  }
+  .business-list a {
+    margin: 0px;
+    font-size: 14px;
+  }
+  .business-list {
+    width: 100%;
+  }
+  .business-top {
+    margin: 30px;
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .footer-middle {
+    width: 100%;
+  }
+  .footer-middle span {
+    font-size: 14px;
+  }
+  .community-wrap li {
+    margin-bottom: 2%;
+  }
+  .footer {
+    padding: 0;
+  }
+  .sub_line {
+  }
   /* ------------------ */
 }
