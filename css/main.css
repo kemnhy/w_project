@@ -175,7 +175,7 @@ a {
   /* width: 177px; */
   display: flex;
   gap: 10px;
-  background-color: rgb(248, 248, 248);
+  background-color: bisque;
 }
 .lang-list {
   display: flex;
@@ -468,11 +468,7 @@ a {
     margin-top: 20px;
   }
 }
-@media (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
-}
+
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -482,6 +478,19 @@ a {
   }
   .lang {
     display: none;
+  }
+  .mobile-menu li a {
+    font-size: 14px;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
 @media (max-width: 390px) {
@@ -504,24 +513,15 @@ a {
   .business p {
     font-size: 11px;
   }
-  .business-title{
+  .business-title {
     font-size: 22px;
     padding: 30px;
   }
-  
+  .mobile-menu li a {
+    font-size: 12px;
+  }
+  .mobile-menu {
+    width: 200px;
+  }
   /* ------------------ */
-}
-
-/* 햄버거 적응형 */
-.hamburger {
-  display: flex;
-}
-.hamburger:hover span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px -6px);
-}
-.hamburger:hover span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger:hover span:nth-child(3) {
-  transform: rotate(-45deg) translate(-5px -6px);
 }
