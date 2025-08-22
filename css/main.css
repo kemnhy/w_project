@@ -46,7 +46,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 80px;
   background-color: #fff;
 }
@@ -69,7 +69,7 @@ a {
   width: 100%;
   display: flex;
   text-align: center;
-  background-color: red;
+  /* background-color: red; */
 }
 .gnb > li {
   width: calc(100% / 4);
@@ -270,6 +270,8 @@ a {
   color: #777;
 }
 .product-top {
+  width: 80%;
+  max-width: 1000px;
 }
 .product-top a {
   display: block;
@@ -315,10 +317,20 @@ a {
   margin-top: 20px;
 }
 .sns-icon-box {
+  width: 50%;
+  max-width: 300px;
+  min-width: 200px;
   display: flex;
-  margin-top: 30px;
   gap: 20px;
   justify-content: center;
+  margin: auto;
+  padding-top: 3%;
+}
+.sns-icon-box > a {
+  width: calc(100% / 4);
+}
+.sns-icon-box > a > img {
+  width: 100%;
 }
 /* 커뮤니티 */
 .community-wrap {
@@ -447,9 +459,6 @@ a {
 }
 /* 반응형 */
 @media (max-width: 1280px) {
-  .web-img {
-    display: none;
-  }
 }
 @media (max-width: 980px) {
   .footer-info {
@@ -479,6 +488,30 @@ a {
   .web-img {
     display: none;
   }
+  .mo-img {
+    display: block;
+  }
+  .community-wrap {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .community-wrap li {
+    width: 100%;
+  }
+  .business-list a{
+    font-size: 10px;
+  }
+  .business p {
+    font-size: 11px;
+    
+    
+  }
+  .business-title{
+    font-size: 22px;
+    padding: 30px;
+  }
+  
+  /* ------------------ */
 }
 
 /* 햄버거 적응형 */
