@@ -46,7 +46,7 @@ a {
   height: 130px;
   border-radius: 50%;
   border: 6px solid #fff;
-  background: url("../images/imgi_2_logo_mo.svg") no-repeat center #b0e1e7;
+  background: url("../images/imgi_2_logo_mo.svg") no-repeat center #f7f7f6;
 }
 .modal-notice {
   font-size: 20px;
@@ -54,7 +54,7 @@ a {
   line-height: 2;
 }
 .modal-notice strong {
-  color: #ed1c24;
+  color: #ec8704;
   background: linear-gradient(to top, yellow 50%, transparent 50%);
 }
 
