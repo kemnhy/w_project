@@ -39,6 +39,7 @@ window.addEventListener("load", function () {
     mobileMenu.classList.remove("active");
     overlay.classList.remove("active");
     hamburger.classList.remove("active");
+        document.body.style.overflow = "";
   });
   mobileMenu.addEventListener("click", function () {
     mobileMenu.classList.remove("active");
