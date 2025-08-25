@@ -86,7 +86,6 @@ a {
   line-height: 80px;
 }
 
-
 /* 서브메뉴 */
 .submenu {
   width: 100%;
@@ -305,7 +304,7 @@ a {
 .news-inner {
   /* margin-top: 60px; */
   padding: 0px 25px;
-  
+
   background-color: #f8f9ee;
 }
 .sub_line {
@@ -382,10 +381,22 @@ a {
   padding: 50px;
   background-color: #fff;
 }
+.gotop-btn {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 45px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.2) url(/images/imgi_68_up_arrow.svg) no-repeat
+    center;
+  z-index: 5;
+  cursor: pointer;
+}
 
 .footer a {
   font-size: 14px;
   line-height: 30px;
+  
 }
 .footer-con a:first-child {
   font-weight: 700;
@@ -447,8 +458,12 @@ a {
   font-size: 14px;
   color: #666;
 }
+
 .sns-logo img {
   width: 35px;
+  
+  
+  
 }
 .footer h2 {
   margin-bottom: 20px;
@@ -506,7 +521,6 @@ a {
   .community-wrap li {
     width: 100%;
   }
-  
 
   .business p {
     padding: 0 15px;
@@ -543,9 +557,7 @@ a {
   .community-wrap .announce p {
     font-size: 14px;
   }
-  
-  
-  
+
   .product-bt {
     flex-direction: column;
     width: 70%;
@@ -587,6 +599,6 @@ a {
   .footer {
     padding: 0;
   }
-  
+
   /* ------------------ */
 }
