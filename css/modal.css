@@ -37,19 +37,13 @@ a {
   text-align: center;
   background-color: #fff;
   border-radius: 30px;
-  padding-top: 150px;
+  overflow: hidden;
+
 }
-.modal-logo {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  background: url("../images/imgi_2_logo_mo.svg") no-repeat center #f7f7f6;
+.modal-main img{
+    width: 100%;
 }
+
 .modal-notice {
   font-size: 20px;
   font-weight: 500;
