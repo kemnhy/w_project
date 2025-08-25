@@ -1,0 +1,70 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* 모달창 */
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999999;
+}
+.modal-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30px;
+  padding-top: 150px;
+}
+.modal-logo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  background: url("../images/imgi_2_logo_mo.svg") no-repeat center #b0e1e7;
+}
+.modal-notice {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+}
+.modal-notice strong {
+  color: #ed1c24;
+  background: linear-gradient(to top, yellow 50%, transparent 50%);
+}
+
+.modal-notice span {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* modal close */
+.modal-close {
+  background-color: #d8d8d8;
+  padding: 15px;
+  border-radius: 0 0 30px 30px;
+}
