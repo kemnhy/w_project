@@ -25,10 +25,12 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
+  
   transform: translate(-50%, -50%);
 
-  width: 600px;
-  height: 500px;
+  max-width: 600px;
+  min-width: 290px;
+  /* height: 500px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,7 +66,7 @@ a {
 }
 /* modal close */
 .modal-close {
-  background-color: #d8d8d8;
+  background-color: #3ba1f5;
   padding: 15px;
   border-radius: 0 0 30px 30px;
 }

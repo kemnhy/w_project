@@ -391,6 +391,7 @@ a {
     center;
   z-index: 5;
   cursor: pointer;
+  display: none;
 }
 
 .footer a {
@@ -601,5 +602,6 @@ a {
     flex-direction: column;
     gap: 5px;
   }
+  
 }
 /* ------------------ */
