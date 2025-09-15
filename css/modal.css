@@ -25,7 +25,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  
+
   transform: translate(-50%, -50%);
 
   max-width: 600px;
@@ -38,20 +38,15 @@ a {
   background-color: #fff;
   border-radius: 30px;
   overflow: hidden;
-
 }
-.modal-main img{
-    width: 100%;
+.modal-main img {
+  width: 100%;
 }
 
 .modal-notice {
   font-size: 20px;
   font-weight: 500;
   line-height: 2;
-}
-.modal-notice strong {
-  color: #ec8704;
-  background: linear-gradient(to top, yellow 50%, transparent 50%);
 }
 
 .modal-notice span {

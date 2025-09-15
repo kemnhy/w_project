@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TD852NFC");
+    </script>
+    <!-- End Google Tag Manager -->
     <title>w_project</title>
     <!-- seo적용 -->
     <!-- seo 엔진 최적화 -->
@@ -53,38 +65,61 @@
     <link
       rel="icon"
       type="image/png"
-      href="favicon (9)/favicon.ico"
+      href="favicon/favicon-96x96.png"
       sizes="96x96"
     />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="favicon (9)/favicon.ico/favicon.svg"
-    />
-    <link rel="shortcut icon" href="favicon (9)/favicon.ico/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="favicon (9)/favicon.ico/apple-touch-icon.png"
+      href="favicon/apple-touch-icon.png"
     />
-    <link href="favicon (9)/favicon.ico/site.webmanifest" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
     <script src="js/submenu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/gotop.js"></script>
     <script src="js/modal.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F5E5VJDDNG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-F5E5VJDDNG");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-TD852NFC"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <body>
     <!-- 모달창 -->
     <div class="modal-wrap">
       <div class="modal-main">
-      
-       <img src="images/imgi_49_21e22e89-deee-43d9-bf0d-5703e2fabe72.png" alt="이미지">
+        <img
+          src="images/imgi_49_21e22e89-deee-43d9-bf0d-5703e2fabe72.png"
+          alt="이미지"
+        />
         <!-- 모달 창 닫기 -->
         <div class="modal-close">
-
-          <input type="checkbox">
-          오늘하루 보지 않기 
+          <input type="checkbox" />
+          오늘하루 보지 않기
           <span class="modal-closeX"> X</span>
         </div>
       </div>
@@ -106,7 +141,7 @@
           <nav class="nav">
             <ul class="gnb">
               <li>
-                <a href="#">
+                <a href="link.html">
                   <div class="menu">브랜드</div>
                   <ul class="submenu">
                     <li>주스</li>
